@@ -10,14 +10,17 @@ export default Ember.Controller.extend({
       }
     },
     save: function() {
+      var question = this.get('model');
       var answer = this.store.createRecord('answer', {
         text: this.get('text')
       });
-      answer.save();
+      answer.save().then(function(){
 
-      var question = this.get('model');
-      question.get('answers').pushObject(answer);
-      question.save();
+        question.get('answers').pushObject(answer);
+        question.save();
+      });
+
+
 
       this.transitionToRoute('question', question.id);
     }
