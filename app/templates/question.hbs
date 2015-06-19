@@ -35,7 +35,7 @@
 <h4 class="green">Current Submitted Answers:</h4>
 
 {{#each 'answer' in model.answers}}
-	<p class="answers-list-items">{{#link-to 'answer' answer.id}}{{answer.text}}{{/link-to}}</p>
+	<p class="answers-list-items">{{#link-to 'answer' answer.id}}{{answer.text}} <span class="green">Date Answered: </span>{{answer.date}}{{/link-to}}</p>
 {{/each}}
 
 

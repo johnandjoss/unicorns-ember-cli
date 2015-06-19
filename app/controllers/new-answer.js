@@ -12,7 +12,9 @@ export default Ember.Controller.extend({
     save: function() {
       var question = this.get('model');
       var answer = this.store.createRecord('answer', {
-        text: this.get('text')
+        text: this.get('text'),
+        timestamp: new Date().getTime(),
+        date: new Date().toDateString()
       });
 
       answer.save().then(function(){
