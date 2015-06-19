@@ -4,11 +4,11 @@
     <div class="col-md-8 questions">
       <h1>Questions &amp; Answers for Unicorns</h1>
 
-        <ul>
+      <ul>
         {{#each 'question' in model}}
           <li>{{#link-to 'question' question.id}}{{question.title}} <span class="colored">Posted by: </span> {{question.author}}{{/link-to}}</li>
         {{/each}}
-        </ul>
+      </ul>
 
       <p>{{#link-to 'new-question' classNames="btn btn-primary"}}New Question{{/link-to}}</p>
       <img class="unicorn-pic" src="RainbowUni.jpg" alt="unicorn">

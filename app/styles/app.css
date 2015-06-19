@@ -10,15 +10,15 @@ h1 {
 	color: #FF8598;
 	text-align: center;
 }
+
 h3.center-me, h4.center-me {
 	text-align: center;
 }
 
-
 .questions {
 	text-align: center;
-
 }
+
 .questions > ul {
 	text-align: center;
 	list-style: none;
@@ -54,15 +54,19 @@ h3.center-me, h4.center-me {
 .btn-primary:hover {
 	background-color: #C9D787;
 }
+
 .sellers {
 	padding-bottom: 20px;
 }
+
 .navbar-default .navbar-nav > li > a {
 	color: #7D8A2E;
 }
+
 .ember-view.btn {
 	background-color: #7D8A2E;
 }
+
 .navbar-default .navbar-nav > li > a:hover {
 	color: #C9D787;
 }
@@ -70,6 +74,7 @@ h3.center-me, h4.center-me {
 .user-list {
 	list-style: none;
 }
+
 .unicorn-pic {
 	margin-top: 20px;
 }
@@ -91,13 +96,16 @@ h3.center-me, h4.center-me {
 .ember-view .users-info {
 	list-style:none;
 }
+
 span.green {
 	font-weight: bold;
 	color: #7D8A2E;
 }
+
 .sellers {
 	padding-bottom: 20px;
 }
+
 .user-img {
 	border-radius: 3px;
 	border: 2px #FF8598 solid;
