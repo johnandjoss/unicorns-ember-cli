@@ -34,12 +34,12 @@
 
 <h4 class="green">Current Submitted Answers:</h4>
 
-{{#each answers}}
-	<p class="answers-list-items">{{#link-to 'answer' this.id }}{{text}}{{/link-to}}</p>
+{{#each 'answer' in model.answers}}
+	<p class="answers-list-items">{{#link-to 'answer' this.id }}{{answer.text}}{{/link-to}}</p>
 {{/each}}
 
 
 
-<p>{{#link-to 'new-answer' this.id class="btn btn-green btn-primary"}}New Answer {{/link-to}}</p>
+<p>{{#link-to 'new-answer' class="btn btn-green btn-primary"}}New Answer {{/link-to}}</p>
 
 {{outlet}}
