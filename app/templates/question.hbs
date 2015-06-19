@@ -1,0 +1,45 @@
+<h1>{{model.title}}</h1>
+<h4><span class="green">By:</span> {{model.author}}</h4>
+
+{{#if isEditing}}
+
+
+<form>
+	<div class="form-group">
+	<label for="title">Title</label>
+		{{input id="title" class="form-control" value=model.title}}
+	</div>
+
+	<div class="form-group">
+	<label for="author">Author</label>
+		{{input id="author" class="form-control" value=model.author}}
+	</div>
+
+	<div class="form-group">
+	<label for="description">Description</label>
+		{{textarea id="description" rows="5" class="form-control" value=model.description}}
+	</div>
+
+  <button class="btn btn-primary" {{action 'save'}}>Save</button>
+</form>
+
+{{else}}
+
+
+<p><span class="green">The big question:</span> {{model.description}}</p>
+<button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+<button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+
+{{/if}}
+
+<h4 class="green">Current Submitted Answers:</h4>
+
+{{#each answers}}
+	<p class="answers-list-items">{{#link-to 'answer' this.id }}{{text}}{{/link-to}}</p>
+{{/each}}
+
+
+
+<p>{{#link-to 'new-answer' this.id class="btn btn-green btn-primary"}}New Answer {{/link-to}}</p>
+
+{{outlet}}

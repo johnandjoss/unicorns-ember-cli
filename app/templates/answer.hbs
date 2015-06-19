@@ -1,0 +1,24 @@
+
+<h4><span class="green">By:</span> {{text}}</h4>
+
+{{#if isEditing}}
+
+
+<form>
+	<div class="form-group">
+	<label for="title">Fix your question</label>
+		{{input id="text" class="form-control" value=text}}
+	</div>
+
+
+  <button class="btn btn-primary" {{action 'save'}}>Save</button>
+</form>
+
+{{else}}
+
+
+
+<button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+<button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+
+{{/if}}
