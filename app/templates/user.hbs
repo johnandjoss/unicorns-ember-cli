@@ -1,0 +1,5 @@
+<ul class="user-list">
+  {{#each user in model}}
+    <li><span class="users-info"> <img class="user-img" {{bind-attr src=user.user.picture.thumbnail}}> <span class="green">NAME: </span>{{user.user.name.first}} <span class="green">EMAIL: </span>{{user.user.email}} </span><br> <br> </li>
+  {{/each}}
+</ul>

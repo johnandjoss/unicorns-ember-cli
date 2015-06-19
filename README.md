@@ -1,6 +1,7 @@
 # Unicorn-quiz
 
 This app allows you to ask a unicorn a question and PERHAPS the unicorn will answer. The user can add, edit, or delete their questions and the unicorns can add, edit, and delete their answers (in case they answer prematurely or have a change of heart, like unicorns are prone to do).
+***As a bonus, you can now look up certified Unicorn Sellers via our API interface***
 
 ## Prerequisites
 

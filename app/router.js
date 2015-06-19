@@ -12,6 +12,9 @@ Router.map(function() {
     this.resource('answer', {path: '/:answer_id'});
   });
   this.resource('new-question');
+  this.resource('users', function(){
+      this.resource('user', {path: 'user/:number/:gender'});
+	});
 });
 
 export default Router;
