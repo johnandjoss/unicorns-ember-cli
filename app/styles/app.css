@@ -1,0 +1,79 @@
+
+body {
+	font-family: 'Handlee', cursive;
+	font-size: 17px;
+}
+
+h1 {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 35px;
+	color: #FF8598;
+}
+
+.questions {
+	text-align: center;
+
+}
+.questions > ul {
+	text-align: center;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	padding-bottom: 20px;
+	padding-top: 3px;
+	font-family: 'Handlee', cursive;
+}
+
+.questions > ul > li{
+
+}
+
+.btn-danger {
+	background-color: #FFC0A9;
+	border: none;
+}
+
+.btn-danger:hover {
+	background-color: #C9D787;
+}
+
+.btn-primary {
+	background-color: #7D8A2E;
+	border: none;
+}
+
+.btn-green {
+	background-color: #7D8A2E;
+}
+
+.btn-primary:hover {
+	background-color: #C9D787;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #7D8A2E;
+}
+.ember-view.btn {
+	background-color: #7D8A2E;
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #C9D787;
+}
+
+.unicorn-pic {
+	margin-top: 20px;
+}
+
+.colored {
+	text-decoration: none;
+	color: #7D8A2E;
+}
+
+.green {
+	font-weight: bold;
+	color: #7D8A2E;
+}
+
+.pink {
+	color: #FF8598;
+}
